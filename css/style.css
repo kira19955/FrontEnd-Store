@@ -1,3 +1,5 @@
+/*Custon properti */
+
 :root{
     --primario: #9C27B0;
     --primarioOscuro: #89119D;
@@ -6,7 +8,10 @@
     --blanco: #FFF;
     --negro: #000;
 
-    --fuentePrincipal: "Staatliches", sans-serif;
+    --fuentePrincipal: 
+    "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -59,4 +64,49 @@ h2{
 }
 h3{
     font-size: 2.4rem;
+}
+
+
+/** HEADER **/
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+    margin: 3rem 0;
+}
+
+/*NEVEGACION*/
+.navegacion{
+ background-color: var(--primarioOscuro);
+ padding: 1rem 0;
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+
+}
+
+.navegacion__enlace{
+ font-family: var(--fuentePrincipal);
+ color: var(--blanco);
+ font-size: 3rem;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--secundario);
+}
+
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__texto{
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
+    text-align: center;
 }
