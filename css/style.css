@@ -183,3 +183,30 @@ h3{
         grid-column: 2 /4;
     }    
 }
+
+
+/*NOSOTROS*/
+
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
+
+@media (min-width:768px) {  /* es de 768px para abajo cuando se aplican las medias query*/
+    .nosotros{
+         grid-template-columns: repeat(2, 1fr);
+         column-gap: 2rem;
+    }
+}
+
+
+.nosotros__imagen{
+    grid-row: 1 /2;
+    width: 100%;
+}
+
+@media (min-width:768px)  {
+    .nosotros__imagen{
+        grid-column: 2 /3;
+    }   
+}
